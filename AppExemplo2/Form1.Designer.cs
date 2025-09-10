@@ -34,14 +34,16 @@
             this.btAlteracaoRotulo = new System.Windows.Forms.Button();
             this.btComboBox = new System.Windows.Forms.Button();
             this.btCalculoDeArea = new System.Windows.Forms.Button();
+            this.btJuros = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(16, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 37);
+            this.label1.Size = new System.Drawing.Size(745, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "MENU DE OPÇÕES";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -49,9 +51,10 @@
             // btAlerta
             // 
             this.btAlerta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAlerta.Location = new System.Drawing.Point(87, 91);
+            this.btAlerta.Location = new System.Drawing.Point(116, 112);
+            this.btAlerta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAlerta.Name = "btAlerta";
-            this.btAlerta.Size = new System.Drawing.Size(405, 35);
+            this.btAlerta.Size = new System.Drawing.Size(540, 43);
             this.btAlerta.TabIndex = 1;
             this.btAlerta.Text = "ALERTAS";
             this.btAlerta.UseVisualStyleBackColor = false;
@@ -61,9 +64,10 @@
             // 
             this.btExemploAlerta.BackColor = System.Drawing.Color.Salmon;
             this.btExemploAlerta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExemploAlerta.Location = new System.Drawing.Point(87, 158);
+            this.btExemploAlerta.Location = new System.Drawing.Point(116, 174);
+            this.btExemploAlerta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btExemploAlerta.Name = "btExemploAlerta";
-            this.btExemploAlerta.Size = new System.Drawing.Size(405, 35);
+            this.btExemploAlerta.Size = new System.Drawing.Size(540, 43);
             this.btExemploAlerta.TabIndex = 2;
             this.btExemploAlerta.Text = "EXEMPLO COM ALERTA";
             this.btExemploAlerta.UseVisualStyleBackColor = false;
@@ -73,9 +77,10 @@
             // 
             this.btAlteracaoRotulo.BackColor = System.Drawing.Color.YellowGreen;
             this.btAlteracaoRotulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAlteracaoRotulo.Location = new System.Drawing.Point(87, 237);
+            this.btAlteracaoRotulo.Location = new System.Drawing.Point(116, 236);
+            this.btAlteracaoRotulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAlteracaoRotulo.Name = "btAlteracaoRotulo";
-            this.btAlteracaoRotulo.Size = new System.Drawing.Size(405, 35);
+            this.btAlteracaoRotulo.Size = new System.Drawing.Size(540, 43);
             this.btAlteracaoRotulo.TabIndex = 3;
             this.btAlteracaoRotulo.Text = "EXEMPLO ALTERAÇÃO DE RÓTULO";
             this.btAlteracaoRotulo.UseVisualStyleBackColor = false;
@@ -85,9 +90,10 @@
             // 
             this.btComboBox.BackColor = System.Drawing.Color.SteelBlue;
             this.btComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btComboBox.Location = new System.Drawing.Point(87, 319);
+            this.btComboBox.Location = new System.Drawing.Point(116, 311);
+            this.btComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btComboBox.Name = "btComboBox";
-            this.btComboBox.Size = new System.Drawing.Size(405, 35);
+            this.btComboBox.Size = new System.Drawing.Size(540, 43);
             this.btComboBox.TabIndex = 4;
             this.btComboBox.Text = "EXEMPLO COM COMBOBOX";
             this.btComboBox.UseVisualStyleBackColor = false;
@@ -97,25 +103,39 @@
             // 
             this.btCalculoDeArea.BackColor = System.Drawing.Color.DarkOrange;
             this.btCalculoDeArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCalculoDeArea.Location = new System.Drawing.Point(87, 400);
+            this.btCalculoDeArea.Location = new System.Drawing.Point(116, 380);
+            this.btCalculoDeArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btCalculoDeArea.Name = "btCalculoDeArea";
-            this.btCalculoDeArea.Size = new System.Drawing.Size(405, 35);
+            this.btCalculoDeArea.Size = new System.Drawing.Size(540, 43);
             this.btCalculoDeArea.TabIndex = 5;
             this.btCalculoDeArea.Text = "EXEMPLO CÁLCULO DE ÁREA";
             this.btCalculoDeArea.UseVisualStyleBackColor = false;
             this.btCalculoDeArea.Click += new System.EventHandler(this.btCalculoDeArea_Click);
             // 
+            // btJuros
+            // 
+            this.btJuros.BackColor = System.Drawing.Color.Thistle;
+            this.btJuros.Location = new System.Drawing.Point(116, 445);
+            this.btJuros.Name = "btJuros";
+            this.btJuros.Size = new System.Drawing.Size(540, 39);
+            this.btJuros.TabIndex = 6;
+            this.btJuros.Text = "CÁLCULO DE JUROS";
+            this.btJuros.UseVisualStyleBackColor = false;
+            this.btJuros.Click += new System.EventHandler(this.btJuros_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 465);
+            this.ClientSize = new System.Drawing.Size(799, 572);
+            this.Controls.Add(this.btJuros);
             this.Controls.Add(this.btCalculoDeArea);
             this.Controls.Add(this.btComboBox);
             this.Controls.Add(this.btAlteracaoRotulo);
             this.Controls.Add(this.btExemploAlerta);
             this.Controls.Add(this.btAlerta);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -130,6 +150,7 @@
         private System.Windows.Forms.Button btAlteracaoRotulo;
         private System.Windows.Forms.Button btComboBox;
         private System.Windows.Forms.Button btCalculoDeArea;
+        private System.Windows.Forms.Button btJuros;
     }
 }
 

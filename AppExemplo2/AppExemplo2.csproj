@@ -64,11 +64,11 @@
     <Compile Include="Formularios\FormCalculoArea.Designer.cs">
       <DependentUpon>FormCalculoArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FormEexmploMontanteJuros.cs">
+    <Compile Include="Formularios\FormExemploMontanteJuros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormEexmploMontanteJuros.Designer.cs">
-      <DependentUpon>FormEexmploMontanteJuros.cs</DependentUpon>
+    <Compile Include="Formularios\FormExemploMontanteJuros.Designer.cs">
+      <DependentUpon>FormExemploMontanteJuros.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormExemploAlerta.cs">
       <SubType>Form</SubType>
@@ -99,8 +99,8 @@
     <EmbeddedResource Include="Formularios\FormCalculoArea.resx">
       <DependentUpon>FormCalculoArea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FormEexmploMontanteJuros.resx">
-      <DependentUpon>FormEexmploMontanteJuros.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormExemploMontanteJuros.resx">
+      <DependentUpon>FormExemploMontanteJuros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormExemploAlerta.resx">
       <DependentUpon>FormExemploAlerta.cs</DependentUpon>

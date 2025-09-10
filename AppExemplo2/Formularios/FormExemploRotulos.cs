@@ -90,10 +90,7 @@ namespace AppExemplo2.Formularios
 
                 txtSalarioAtual.Select();
             }
-            else
-            {
-                txtSalarioAtual.Select();
-            }
+            
         }
 
         private void txtPercentual_Leave(object sender, EventArgs e)
@@ -104,11 +101,38 @@ namespace AppExemplo2.Formularios
 
                 txtPercentual.Select();
             }
+                
+        }
+
+        private void txtPercentual_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPercentual_KeyUp(object sender, KeyEventArgs e)
+        {
+            bool verificarNum = false;
+           
+            if ((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9))
+            {
+                verificarNum = true;
+
+            }
             else
             {
-                txtPercentual.Select();
+                if (e.KeyCode == Keys.Oemcomma || e.KeyCode == Keys.Decimal) verificarNum = true;
+                if (e.KeyCode == Keys.Enter) verificarNum = true; 
+                if (e.KeyCode == Keys.Back) verificarNum = true; 
+                int qtdVirgula = txtPercentual.Text.Count(v => v == ','); 
+                if (qtdVirgula > 1) verificarNum = false;
+                                                         
             }
-                
+
+            if (verificarNum == false)
+            {
+                MessageBox.Show("Somente números", "ADS/JIPA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPercentual.Text = txtPercentual.Text.Remove(txtPercentual.Text.Length - 1);
+            }
         }
     }
 }
